@@ -1,0 +1,59 @@
+/* Basic style */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the search field and buttons */
+#search, #sortButton, #clearButton {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 255, 0, 0.6); /* Semi-transparent neon green background color for a glass effect */
+    color: #000;
+    border: 2px solid #0f0;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3); /* Shadow to give depth */
+    backdrop-filter: blur(10px); /* Blur filter for a glass effect */
+}
+
+#search:hover, #sortButton:hover, #clearButton:hover {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background color when hovering */
+    color: #0f0;
+}
+
+/* Style for the table */
+#userTable {
+    margin: 10px;
+    border-collapse: collapse;
+    color: #0f0;
+    background-color: #000;
+}
+
+#userTable th, #userTable td {
+    padding: 10px;
+    border: 2px solid #0f0;
+}
+
+#userTable th {
+    background-color: #0f0;
+    color: #000;
+}
+
+/* Responsive style for smaller screens */
+@media screen and (max-width: 600px) {
+    #search, #sortButton, #clearButton {
+        width: 100%;
+    }
+
+    #userTable, #userTable th, #userTable td {
+        width: 100%;
+    }
+}
