@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- Defines the document type and version of HTML -->
+<html lang="pt"> <!-- Start of the HTML document. The language is set to Portuguese -->
+
+<head> <!-- Contains meta-information about the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Makes the webpage responsive on different devices -->
+    <title>Dashboard de Administração</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links the CSS stylesheet to style the HTML document -->
+</head>
+
+<body> <!-- Contains the content that will be visible to the user -->
+    <label for="search">Buscar usuário</label> <!-- Label for the search input field -->
+    <input type="text" id="search" placeholder="Pesquisa"> <!-- Text input field for searching users -->
+    <button id="sortButton">Buscar</button> <!-- Button to sort users -->
+    <button id="clearButton">Limpar busca</button>
+    <table id="userTable"> <!-- Table to display users -->
+        <thead> <!-- Table header -->
+            <tr> <!-- Table row -->
+                <th>Nome</th> <!-- Table header cell for user names -->
+                <th>Email</th> <!-- Table header cell for user emails -->
+            </tr>
+        </thead>
+    </table>
+    <script src="js/script.js"></script> <!-- Links the JavaScript file to add functionality to the HTML document -->
+</body>
+
+</html> <!-- End of the HTML document -->
